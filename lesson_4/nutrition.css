@@ -35,6 +35,14 @@ header {
   margin-bottom: 5px;
 }
 
+th {
+  border-top: 10px solid black;
+  border-bottom: 1px solid black;
+  padding: 5px 0;
+  font-size: 25px;
+  text-align: right;
+}
+
 dl {
   display: inline-block;
   width: 100%;
@@ -42,23 +50,10 @@ dl {
   padding: 5px 0;
 }
 
-dt {
-  display: inline-block;
-  width: 50%;
-  padding: 3px 0;
-}
-
-dt:nth-child(3), td:nth-child(2) {
+td:nth-child(2) {
   text-align: right;
 }
 
-th {
-  border-top: 10px solid black;
-  border-bottom: 1px solid black;
-  padding: 5px 0;
-  font-size: 20px;
-  text-align: right;
-}
 
 .indent {
   padding-left: 30px;
