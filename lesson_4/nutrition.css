@@ -1,0 +1,92 @@
+body {
+  font: normal 30px "Helvetica Black", "Arial", sans-serif;
+}
+
+main {
+  box-sizing: border-box;
+  border: 3px solid black;
+  width: 684px;
+  padding: 8px;
+}
+
+h1 {
+  font-size: 64px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 25px;
+  border-bottom: 1px solid black;
+  margin: 0;
+  padding: 5px 0 5px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+p {
+  margin: 1px 0 1px 0;
+}
+
+header {
+  border-bottom: 30px solid black;
+  margin-bottom: 5px;
+}
+
+dl {
+  display: inline-block;
+  width: 100%;
+  margin: 0px;
+  padding: 5px 0;
+}
+
+dt {
+  display: inline-block;
+  width: 50%;
+  padding: 3px 0;
+}
+
+dt:nth-child(3), td:nth-child(2) {
+  text-align: right;
+}
+
+th {
+  border-top: 10px solid black;
+  border-bottom: 1px solid black;
+  padding: 5px 0;
+  font-size: 20px;
+  text-align: right;
+}
+
+.indent {
+  padding-left: 30px;
+}
+
+section:nth-of-type(2) td, section:nth-of-type(3) td {
+  border-bottom: 1px solid black;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+
+section:nth-of-type(3) table {
+  border-top: 30px solid black;
+}
+
+section:nth-of-type(4) p {
+  font-size: 20px;
+  text-align: left;
+  padding: 18px 2px 15px 2px;
+}
+
+section:nth-of-type(5) tr:first-of-type {
+  border-bottom: 1px solid black;
+}
+
+section:nth-of-type(5) td {
+  font-size: 20px;
+  margin: 0;
+  text-align: left;
+  padding-top: 2px;
+}
