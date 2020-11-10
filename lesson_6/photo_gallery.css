@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font: normal 18px Helvetica, Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+body {
+  max-width: 1000px;
+  display: grid;
+  margin: 0 auto;
+}
+
+main {
+  padding: 50px 20px;
+  background-color: #333;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "title title title title"
+    "main main main main"
+    "second third fourth fifth"
+    "sixth seventh eighth . ";
+  justify-items: center;
+  gap: 20px 25px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 899px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "title title title"
+    "main main main"
+    "second third fourth"
+    "fifth sixth seventh"
+    "eighth . . ";
+  }
+}
+
+@media screen and (max-width: 599px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "title title"
+    "main main"
+    "second third"
+    "fourth fifth"
+    "sixth seventh"
+    "eighth . ";
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "title title title"
+    "main main second"
+    "main main third"
+    ". . fourth"
+    ". . fifth"
+    ". . sixth"
+    ". . seventh"
+    ". . eighth";
+    width: 100%;
+  }
+}
+
+/* div {
+  height: 25%;
+} */
+
+figure img {
+  border: 15px solid white;
+  height: 100%
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border: 3px solid white;
+  box-sizing: border-box;
+}
+
+h1 {
+  grid-area: title;
+  font-size: 35px;
+}
+
+figcaption {
+  padding-top: 10px;
+}
+
+#main-photo {
+  grid-area: main;
+}
+
+#second-photo {
+  grid-area: second;
+}
+
+#third-photo {
+  grid-area: third;
+}
+
+#fourth-photo {
+  grid-area: fourth;
+}
+
+#fifth-photo {
+  grid-area: fifth;
+}
+
+#sixth-photo {
+  grid-area: sixth;
+}
+
+#seventh-photo {
+  grid-area: seventh;
+}
+
+#eighth-photo {
+  grid-area: eighth;
+}

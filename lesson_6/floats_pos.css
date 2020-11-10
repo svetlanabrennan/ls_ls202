@@ -1,0 +1,253 @@
+body {
+  font: normal 16px Helvetica, Arial, sans-serif;
+  border: 2px solid gray;
+  width: 950px;
+  margin-left: 300px;
+  /* margin: 10px; */
+  padding: 10px;
+}
+
+h1, h2, h3 {
+  color: #ce4a4a;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.border, .border-margin, .green-margin {
+  border: 1px dashed black;
+  width: 60%;
+  margin: 40px 0px 40px 40px;
+  padding: 25px;
+}
+
+.border-margin > a {
+  margin-right: 40px;
+}
+
+.green-margin > a {
+  padding: 25px;
+  background-color: green;
+  color: white;
+}
+
+.inline-float {
+  margin: 40px 0px 40px 40px;
+  border: 1px dashed black;
+  width: 60%;
+  padding: 25px;
+}
+
+.inline-float::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.inline-float > a {
+  padding: 25px;
+  background-color: green;
+  color: white;
+  border: 3px solid darkgreen;
+  float: left;
+  margin: 15px;
+}
+
+.div-element {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.height-div {
+  background-color: green;
+  color: white;
+  height: 60px;
+  padding: 20px;
+  margin: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.width-div {
+  background-color: tomato;
+  color: white;
+  width: 90px;
+}
+
+.width-height-div {
+  background-color: pink;
+  color: white;
+  width: 180px;
+  height: 120px;
+  padding: 20px;
+  margin: 20px;
+  box-sizing: border-box;
+}
+
+.float {
+  margin-bottom: 25px;
+}
+
+.float-left {
+  float: left;
+  color: white;
+  background-color: dodgerblue;
+  border: 1px solid tomato;
+}
+
+.float-right {
+  float: right;
+  color: white;
+  background-color: tomato;
+  border: 1px solid tomato;
+}
+
+.float::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.float-left-2 {
+  float: left;
+  color: white;
+  background-color: tomato;
+  width: 40%;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+}
+
+.float-right-2 {
+  float: right;
+  color: white;
+  background-color: dodgerblue;
+  width: 50%;
+  text-align: center;
+  height: 70px;
+  line-height: 70px;
+}
+
+.block-anchor > a {
+  display: block;
+  background-color: dodgerblue;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.nav-bar {
+  /* margin: 70px 0 70px 60px; */
+  text-align: center;
+}
+
+.nav-bar > a {
+  background-color: dodgerblue;
+  border: 1px solid#1b95e0;
+  display: inline-block;
+  color: white;
+  padding: 20px 30px;
+  width: 120px;
+  margin: 20px 8px 25px;
+}
+
+section:nth-of-type(3) {
+  margin-bottom: 30px;
+  padding-bottom: 50px;
+  border-bottom: 2px dashed black;;
+}
+
+section:nth-of-type(4) h2 {
+  text-align: center;
+}
+
+.box-1 {
+  background-color: tomato;
+  color: white;
+  float: left;
+  width: 50%;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+}
+
+.box-2 {
+  background-color: dodgerblue;
+  color: white;
+  float: left;
+  width: 50%;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+}
+
+.box-3 {
+  float: left;
+  background-color: green;
+  color: white;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  margin-bottom: 50px;
+}
+
+.box-3::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+section:nth-of-type(5) li {
+  font-style: italic;
+  margin: 10px 15px 10px;
+}
+
+.fixed-box {
+  background-color:dodgerblue;
+  box-sizing: border-box;
+  color: white;
+  position: fixed;
+  bottom: 50px;
+  left: 35px;
+  padding: 25px 35px;
+  width: 225px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.relative-box {
+  background-color: tomato;
+  color: white;
+  position: relative;
+  top: 30px;
+  left: -90px;
+  text-align: center;
+  width: 260px;
+  padding: 30px 35px;
+  border-radius: 10px;;
+}
+
+.pos-absolute {
+  position: relative;
+}
+
+.absolute-box {
+  background-color: green;
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  position: absolute;
+  width: 200px;
+  padding: 25px 35px;
+  border-radius: 10px;
+  top: -220px;
+  left: 230px;
+  margin-bottom: 30px;
+}
+
+p {
+  margin-bottom: 45px;
+}
