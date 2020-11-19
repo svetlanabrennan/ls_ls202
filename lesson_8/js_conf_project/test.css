@@ -20,9 +20,9 @@ h2 {
 
 #platinum_container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-areas: 
-  "platinum-1 platinum-2 platinum-3 . ";
+  "platinum-1 platinum-2 platinum-3";
 }
 
 #support_container {
