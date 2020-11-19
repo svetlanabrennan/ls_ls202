@@ -1,0 +1,67 @@
+@import url("whitespace-reset.css");
+
+article {
+  border-bottom: 1px solid #EEE;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h2 {
+  padding-top: 74px;
+  font-size: 48px;
+  font-weight: 200;
+}
+
+#sponsors {
+  width: 957px;
+  margin: 0 auto;
+  padding-bottom: 62px;
+}
+
+#platinum_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 
+  "platinum-1 platinum-2 platinum-3 . ";
+}
+
+#support_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 
+  "support-1 support-2 support-3 support-4";
+}
+
+.title {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#platinum-1 {
+  grid-area: platinum-1;
+}
+
+#platinum-2 {
+  grid-area: platinum-2;
+}
+
+#platinum-3 {
+  grid-area: platinum-3;
+}
+
+#support-1 {
+  grid-area: support-1;
+}
+
+#support-2 {
+  grid-area: support-2;
+}
+
+#support-3 {
+  grid-area: support-3;
+}
+
+#support-4 {
+  grid-area: support-4;
+}
