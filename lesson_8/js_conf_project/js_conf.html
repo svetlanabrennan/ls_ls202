@@ -4,6 +4,7 @@
 <head>
   <title>JSConf BR 2014</title>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
@@ -12,101 +13,103 @@
 </head>
 
 <body>
-  <nav>
-    <a href="#tickets">TICKETS</a>
-    <a href="#speakers">SPEAKERS</a>
-    <a href="#schedule">SCHEDULE</a>
-    <a href="#location">LOCATION</a>
-    <a href="#callforpapers">CALL FOR PAPERS</a>
-    <a href="#sponsors">SPONSORS</a>
-    <a href="https://confcodeofconduct.com/">CODE OF CONDUCT</a>
-  </nav>
-
   <main>
+    <div id="menu">
+      <nav>
+        <a href="#tickets" id="link-1">TICKETS</a>
+        <a href="#speakers" id="link-2">SPEAKERS</a>
+        <a href="#schedule" id="link-3">SCHEDULE</a>
+        <a href="#location" id="link-4">LOCATION</a>
+        <a href="#callforpapers" id="link-5">CALL FOR PAPERS</a>
+        <a href="#sponsors" id="link-6">SPONSORS</a>
+        <a href="https://confcodeofconduct.com/" id="link-7">CODE OF CONDUCT</a>
+      </nav>
+    </div>
     <div id="hero">
       <img src="images/jsconfbr.png" alt="logo">
       <h1>JSConf BR 2014</h1>
       <h4>APRIL 26 / FORTALEZA, BRAZIL</h4>
     </div>
 
-    <article id="tickets">
-      <h2>Tickets</h2>
-      <p>Super Early Bird is opened!</p>
-      <!-- <button>Buy JSConf BR Tickets</button> -->
-      <a href="http://tix.jsconfbr.org/" class="button">Buy JSConf BR Tickets</a>
+    <article>
+      <section id="tickets">
+        <h2>Tickets</h2>
+        <p>Super Early Bird is opened!</p>
+        <a href="http://tix.jsconfbr.org/" class="button">Buy JSConf BR Tickets</a>
+      </section>
     </article>
 
     <article>
       <section id="speakers">
         <h2>Speakers</h2>
         <div class="speakers_wrapper">
-          <figure>
+          <figure id="speaker-1">
             <img src="images/speakers/gregor_martynus.jpg" alt="gregor_martynus">
             <h3>Gregor Martynus</h3>
             <p>Offline First, Made Easy</p>
           </figure>
 
-          <figure>
+          <figure id="speaker-2">
             <img src="images/speakers/lynn_fisher.jpg" alt="lynn_fisher">
             <h3>Lynn Fisher</h3>
             <p>Developers as Intentional Designers</p>
           </figure>
 
-          <figure>
+          <figure id="speaker-3">
             <img src="images/speakers/eduardo_shiota.jpg" alt="eduardo_shiota">
             <h3>Eduardo Shiota</h3>
             <p>Rock the broswer like it's 1933</p>
           </figure>
 
-          <figure>
+          <figure id="speaker-4">
             <img src="images/speakers/francis_gulotta.jpg" alt="francis_gulotta">
             <h3>Francis Gulotta</h3>
             <p>Full Staack Firmata</p>
           </figure>
 
-          <figure>
+          <figure id="speaker-5">
             <img src="images/speakers/tim_caswell.jpg" alt="tim_caswell">
             <h3>Tim Caswell</h3>
             <p>The JS-Git Journey</p>
           </figure>
 
-          <figure>
+          <figure id="speaker-6">
             <img src="images/speakers/dave_furfero.jpg" alt="dave_furfero">
             <h3>Dave Furfero</h3>
             <p>Close Enough: Using JavaScript to Emulate the Abstract Expressionist Masterworks of Chuck Close</p>
           </figure>
 
-          <figure>
+          <figure id="speaker-7">
             <img src="images/speakers/ju_goncalves.jpg" alt="ju_goncalves">
             <h3>Jú Gonçalves</h3>
             <p>You, programming languages and the browser</p>
           </figure>
 
-          <figure>
+          <figure id="speaker-8">
             <img src="images/speakers/tim_park.jpg" alt="tim_park">
             <h3>Tim Park</h3>
             <p>JavaScript for all the things!</p>
           </figure>
 
-          <figure>
+          <figure id="speaker-9">
             <img src="images/speakers/david_dias.jpg" alt="david_dias">
             <h3>David Dias</h3>
             <p>The JS-Git Journey</p>
           </figure>
 
-          <figure>
+          <figure id="speaker-10">
             <img src="images/speakers/bernard_kobos.jpg" alt="bernard_kobos">
             <h3>Bernard Kobos</h3>
             <p>Appium</p>
           </figure>
 
-          <figure>
+          <figure id="speaker-11">
             <img src="images/speakers/john_paul.jpg" alt="john_paul">
             <h3>John Paul</h3>
             <p>ES6 on the frontend, in the real world</p>
           </figure>
 
-          <figure>
+          <figure id="speaker-12">
             <img src="images/speakers/eric_mann.jpg" alt="eric_mann">
             <h3>Eric Mann</h3>
             <p>Monkeys in the Machine</p>
@@ -336,92 +339,72 @@
         <h2>Sponsors</h2>
         <p class="title">Platinum</p>
         <div id="platinum_container">
-          <figure id="platinum-1">
-            <img src="images/sponsors/microsoft.png" alt="microsoft">
-          </figure>
-
-          <figure id="platinum-2">
-            <img src="images/sponsors/booking.com.png" alt="booking">
-          </figure>
-
-          <figure id="platinum-3">
-            <img src="images/sponsors/casamagalhaes.png" alt="casamagalhaes">
-          </figure>
+          <a href="https://www.microsoft.com/en-us/" id="platinum-1" target="_blank"><img
+              src="images/sponsors/microsoft.png" alt="microsoft"></a>
+          <a href="http://www.workingatbooking.com/" id="platinum-2" target="_blank"><img
+              src="images/sponsors/booking.com.png" alt="booking"></a>
+          <a href="https://www.casamagalhaes.com.br/" id="platinum-3" target="_blank"><img
+              src="images/sponsors/casamagalhaes.png" alt="casamagalhaes"></a>
         </div>
 
-        <!-- <p class="title">Gold</p>
+        <p class="title">Gold</p>
         <div id="gold_container">
-          <figure id="gold-1">
-            <img src="images/sponsors/globo.png" alt="global">
-          </figure>
 
-          <figure id="gold-2">
-            <img src="images/sponsors/mozilla.png" alt="mozilla">
-          </figure>
+          <a href="https://www.globo.com/" id="gold-1" target="_blank"><img src="images/sponsors/globo.png"
+              alt="global"></a>
+          <a href="https://www.mozilla.org/en-US/" id="gold-2" target="_blank"> <img src="images/sponsors/mozilla.png"
+              alt="mozilla"></a>
+          <a href="https://www.caelum.com.br/" id="gold-3" target="_blank"><img src="images/sponsors/caelum.png"
+              alt="caelum"></a>
+          <a href="http://www.unigex.com.br/" id="gold-4" target="_blank"><img src="images/sponsors/unigex.png"
+              alt="unigex"></a>
+          <a href="https://saucelabs.com/" id="gold-5" target="_blank"><img src="images/sponsors/saucelabs.png"
+              alt="saucelabs"></a>
+          <a href="https://andyet.com/" id="gold-6" target="_blank"><img src="images/sponsors/andyet.png"
+              alt="andyet"></a>
+          <a href="https://www.digitalocean.com/" id="gold-7" target="_blank"><img
+              src="images/sponsors/digitalocean.png" alt="digitalocean"></a>
+        </div>
 
-          <figure id="gold-3">
-            <img src="images/sponsors/caelum.png" alt="caelum">
-          </figure>
-
-          <figure id="gold-4">
-            <img src="images/sponsors/unigex.png" alt="unigex">
-          </figure>
-
-          <figure id="gold-5">
-            <img src="images/sponsors/saucelabs.png" alt="saucelabs">
-          </figure>
-
-          <figure id="gold-6">
-            <img src="images/sponsors/andyet.png" alt="andyet">
-          </figure>
-
-          <figure id="gold-7">
-            <img src="images/sponsors/digitalocean.png" alt="digitalocean">
-          </figure>
-        </div>-->
-
-        <!-- <p class="title">Silver</p>
+        <p class="title">Silver</p>
         <div id="silver_container">
-          <figure id="silver-1">
-            <img src="images/sponsors/sagarana.png" alt="sagarana">
-          </figure>
-
-          <figure id="silver-2">
-            <img src="images/sponsors/unum.png" alt="unum">
-          </figure>
-
-          <figure id="silver-3">
-            <img src="images/sponsors/grupo_fortes.png" alt="grupo_fortes">
-          </figure>
-        </div> -->
+          <a href="http://www.sagaranatech.com/cgi-sys/defaultwebpage.cgi" id="silver-1" target="_blank"><img
+              src="images/sponsors/sagarana.png" alt="sagarana"></a>
+          <a href="https://unum.com.br/" id="silver-2" target="_blank"><img src="images/sponsors/unum.png"
+              alt="unum"></a>
+          <a href="http://www.grupofortes.com.br/" id="silver-3" target="_blank"><img
+              src="images/sponsors/grupo_fortes.png" alt="grupo_fortes"></a>
+        </div>
 
         <p class="title">Support</p>
         <div id="support_container">
-          <!-- <a href="" id="support-1"><img src="images/sponsors/alura.png" alt="alura"></a>
-          <a href="" id="support-2"> <img src="images/sponsors/casadocodigo.png" alt="casadocodigo"></a>
-          <a href="" id="support-3"><img src="images/sponsors/penton.png" alt="penton"></a>
-          <a href="" id="support-4"><img src="images/sponsors/10up.png" alt="10up"></a> -->
-          <figure id="support-1">
-            <img src="images/sponsors/alura.png" alt="alura">
-          </figure>
-
-          <figure id="support-2">
-            <img src="images/sponsors/casadocodigo.png" alt="casadocodigo">
-          </figure>
-
-          <figure id="support-3">
-            <img src="images/sponsors/penton.png" alt="penton">
-          </figure>
-
-          <figure id="support-4">
-            <img src="images/sponsors/10up.png" alt="10up">
-          </figure>
+          <a href="https://www.alura.com.br/" id="support-1" target="_blank"><img src="images/sponsors/alura.png"
+              alt="alura"></a>
+          <a href="https://www.casadocodigo.com.br/" id="support-2" target="_blank"> <img
+              src="images/sponsors/casadocodigo.png" alt="casadocodigo"></a>
+          <a href="https://www.informa.com/" id="support-3" target="_blank"><img src="images/sponsors/penton.png"
+              alt="penton"></a>
+          <a href="https://10up.com/" id="support-4" target="_blank"><img src="images/sponsors/10up.png" alt="10up"></a>
         </div>
       </section>
     </article>
   </main>
 
   <footer>
+    <article>
+      <h2>Presented by:</h2>
+      <section id="footer_overlay">
+        <div id="footer_text">
+          <h3>JSCONF BR TEAM</h3>
+          <p>We are the team working hard to make this conference epic.</p>
+          <p>Meet the team: <a href="https://twitter.com/qmx" alt="douglas">Douglas Campos</a>, <a
+              href="https://twitter.com/campos_calebe" alt="calebe">Calebe Campos</a>,
+            <a href="https://twitter.com/cmilfont" alt="christiano">Christiano Milfront</a> and <a
+              href="https://twitter.com/henriquegogo" alt="henrique">Henrique Gogó</a>.</p>
+          <p><a href="" class="button">@jsconfbr</a></p>
+        </div>
+      </section>
+    </article>
 
   </footer>
 </body>

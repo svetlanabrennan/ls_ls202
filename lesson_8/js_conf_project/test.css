@@ -20,7 +20,7 @@ h2 {
 
 #platinum_container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 25% 25% 25% 25%;
   grid-template-areas: 
   "platinum-1 platinum-2 platinum-3";
 }
@@ -64,4 +64,13 @@ h2 {
 
 #support-4 {
   grid-area: support-4;
+}
+
+#platinum_container figure > img {
+  width: 80%;
+}
+
+#support_container figure > img {
+  width: 80%;
+  height: auto;
 }
