@@ -1,0 +1,277 @@
+@import url("whitespace-reset.css");
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font: normal 16px Helvetica, Arial, "sans-serif";
+  color: #060606;
+  white-space: nowrap;
+  height: 818px;
+}
+
+nav, main {
+  /* max-width: 1200px; */
+  display: inline-block;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+main {
+  /* min-width: 69%; */
+  /* padding-top: 70px; */
+  /* box-sizing: border-box; */
+  display: flex;
+  align-content: flex-start;
+  /* position: relative; */
+}
+
+.main_todos {
+  order: 2;
+  min-width: 80%;
+}
+
+.menu {
+  order: 1;
+}
+
+label:first-of-type {
+  display: none;
+}
+
+nav {
+  background-color: #464f77;
+  min-width: 335px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 20px;
+  /* padding-left: 10px; */
+}
+
+table {
+  border-collapse: collapse;
+  box-sizing: border-box;
+  /* width: 100%; */
+}
+
+.all_todos {
+  padding-top: 70px;
+  text-align: center;
+}
+
+.completed_todos {
+  padding-top: 60px;
+  text-align: center;
+}
+
+.all_todos table, .completed_todos table {
+  margin: 0 auto;
+  margin-right: 0;
+}
+
+.all_todos td, .completed_todos td {
+  height: 39px;
+}
+
+.all_todos td:first-of-type, .completed_todos td:first-of-type {
+  padding-left: 105px;
+}
+
+.all_todos td:nth-of-type(2), .completed_todos td:nth-of-type(2) {
+  text-align: left;
+  padding-left: 10px;
+  width: 141px;
+}
+
+.all_todos td:nth-of-type(3), .completed_todos td:nth-of-type(3) {
+  width: 110px;
+  /* width: 20px; */
+  color: #b2b5c3;
+}
+
+.completed_todos td:nth-of-type(2), .all_todos td:nth-of-type(2) {
+  text-decoration: line-through;
+  color: #b2b5c3;
+}
+
+.all_todos td:nth-of-type(2) {
+  text-decoration: none
+}
+
+.completed_todos tr:first-of-type > td, .all_todos tr:first-of-type > td {
+  text-decoration: none;
+  color: #fff;
+}
+
+.all_todos tr:hover, .completed_todos tr:hover {
+  background-color: #38405e;
+}
+
+.all_todos tr:hover > td, .completed_todos tr:hover > td {
+  color: #fff;
+}
+
+.circle, .oval {
+  background-color: #6b7292;
+  padding-top: 3px;
+  border-radius: 50%;
+  width: 22px;
+  height: 20px;
+  margin: 0 auto;
+  font-size: 15px;
+}
+
+.circle:hover {
+  background-color: #148fd5;
+  padding-top: 3px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.oval {
+  width: 30px;
+}
+
+.circle_main {
+  background-color:#148fd5;
+  padding-top: 3px;
+  border-radius: 50%;
+  width: 22px;
+  height: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.main_todos {
+  margin: 70px 50px 0 20px;
+  width: 90%;
+}
+
+.main_todos tr {
+  /* width: 745px; */
+  border-bottom: 1px solid #e7e7e7;
+  height: 48px;
+}
+
+.main_todos tr:first-of-type > td:nth-of-type(2) {
+  padding-left: 20px;
+}
+
+.main_todos tr:nth-of-type(2) > td:nth-of-type(2) {
+  color: #148fd5;
+}
+
+.main_todos tr:first-of-type {
+  border: none;
+}
+
+.main_todos tr:last-of-type {
+  border: none;
+}
+
+.main_todos td:first-of-type {
+  width: 20px;
+  margin: 0 auto;
+  /* padding-left: 20px; */
+}
+
+.main_todos td:first-of-type img {
+  margin-left: 20px;
+}
+
+.main_todos td:last-of-type {
+  width: 20px;
+}
+
+.main_todos td:nth-of-type(2):hover {
+  color: #148fd5;
+  cursor: pointer;
+}
+
+.completed {
+  color: #b3b3b3;
+  text-decoration: line-through;
+}
+
+label:first-of-type {
+  cursor: pointer;
+  padding: 0 0 20px 20px;
+}
+
+label > img {
+  height: 30px;
+  width: 30px;
+}
+
+[type="checkbox"] {
+  display: none;
+}
+
+#menu_toggle {
+  display: none;
+}
+
+/* #menu {
+  display: none;
+} */
+
+#menu_toggle:checked +label:first-of-type {
+  display: block;
+  position: absolute;
+  left: 395px;
+  top: 15px;
+  z-index: 1;
+}
+
+#menu_toggle:checked ~ #menu {
+  display: block;
+  float: left;
+  height: min-content;
+  padding-bottom: 75px;
+}
+
+/* #menu_toggle:checked nav {
+  display: inline-block;
+  height: 100%;
+  box-sizing: border-box;
+} */
+
+
+#menu_toggle:checked ~.main_todos{
+  width: 40%;
+  float: right;
+}
+
+/* #menu_toggle:checked  {
+  padding-left: 120px;
+} */
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  main {
+    min-width: 100%;
+  }
+
+  label:first-of-type {
+    display: block;
+    height: 30px;
+    width: 30px;
+    padding-left: 20px;
+    position: absolute;
+    left: 1px;
+    top: 15px;
+    z-index: 1;
+  }
+}
+
+
