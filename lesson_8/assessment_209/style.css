@@ -239,7 +239,6 @@ input:checked + #module_label {
 }
 
 #day, #year, #month {
-  /* width: 116px; */
  height: 37px;
   width: 29%;
 }
