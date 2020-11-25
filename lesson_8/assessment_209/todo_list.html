@@ -10,9 +10,10 @@
 
 <body>
   <main>
+    <input type="checkbox" id="menu_toggle" />
+    <label for="menu_toggle"><img src="images/hamburger.png" alt="menu"></label>
     <table class="main_todos">
-      <input type="checkbox" id="menu_toggle" />
-      <label for="menu_toggle"><img src="images/hamburger.png" alt="menu"></label>
+
       <tr>
         <td>
           <h1>02/16</h1>
@@ -31,7 +32,57 @@
 
       <tr>
         <td><img src="images/unticked-box.png"></td>
-        <td>Item 1</td>
+        <td>
+          <label for="box">Item 1</label>
+          <input type="checkbox" id="box" name="box">
+
+          <label id="module_label">
+            <form class="module_form" action="#" method="post">
+              <fieldset id="row1">
+                <label for="title" id="title_label">Title</label>
+                <input type="text" name="title" id="title" placeholder="Item 2" />
+              </fieldset>
+
+              <fieldset id="inline">
+                <label for="day" id="day_label">Due Date</label>
+                <input type="number" name="day" id="day" min="1" max="31" placeholder="16" />
+                <p>/</p>
+                <select id="month">
+                  <option value="" disabled selected>Month</option>
+                  <option>January</option>
+                  <option>February</option>
+                  <option>March</option>
+                  <option>April</option>
+                  <option>May</option>
+                  <option>June</option>
+                  <option>July</option>
+                  <option>August</option>
+                  <option>September</option>
+                  <option>October</option>
+                  <option>November</option>
+                  <option>December</option>
+
+                </select>
+                <p>/</p>
+                <input type="number" name="year" id="year" min="2019" max="2030" placeholder="Year" />
+              </fieldset>
+
+              <br>
+
+              <label for="description" id="description_label">
+                Description
+              </label>
+              <textarea name="description" id="description" rows="6">Description</textarea>
+
+              <br>
+
+              <fieldset id="buttons">
+                <input type="submit" value="Save" class="button" />
+                <input type="submit" value="Mark as Complete" class="button" formaction="#" />
+              </fieldset>
+            </form>
+          </label>
+        </td>
         <td><img src="images/trash.png"></td>
       </tr>
 
@@ -83,6 +134,7 @@
         <td><img src="images/trash.png"></td>
       </tr>
     </table>
+
 
 
     <nav id="menu">
@@ -185,7 +237,3 @@
 </body>
 
 </html>
-
-
-<!-- ITEMS TO Completed
-The circle surrounding the count of Todo items should adjust its size accordingly (see the circle enclosing the number 18) -->
